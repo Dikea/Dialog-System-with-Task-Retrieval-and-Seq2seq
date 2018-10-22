@@ -1,0 +1,14 @@
+tensorboard使用方法：
+
+source activate tfenv.v1.3
+export LC_ALL=C
+tensorboard --logdir="runs/xxxxxxx"
+(Eg. tensorboard --logdir="runs/1526878121/")
+然后会出现如下
+TensorBoard 0.1.8 at http://VM_38_161_centos:6006 (Press CTRL+C to quit)
+将VMxxxx换成服务器IP号就行，端口号保留
+
+
+
+
+
