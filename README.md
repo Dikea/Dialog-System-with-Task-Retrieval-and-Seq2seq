@@ -2,7 +2,7 @@
 
 [大赛网址](http://jddc.jd.com/)
 
-成绩：并列亚军，成绩排名第三
+成绩：并列亚军，成绩排名第三，有问题联系邮箱：huanghailong17@mails.ucas.ac.cn
 
 # 方案框架
 
