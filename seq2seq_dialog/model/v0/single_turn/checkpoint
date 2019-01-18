@@ -1,0 +1,2 @@
+model_checkpoint_path: "chatbot.ckpt"
+all_model_checkpoint_paths: "chatbot.ckpt"
