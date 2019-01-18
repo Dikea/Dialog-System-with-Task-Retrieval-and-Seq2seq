@@ -12,7 +12,7 @@
 
 ## 代码运行
 
-> 数据较大400M，github容量限制，完整的模型代码传到百度云上，下载即可运行，[下载链接](/Users/dikea/Desktop/JDDC-Dialog-Solution.zip)。
+> 数据较大400M，github容量限制，完整的模型代码传到百度云上，下载即可运行，[下载链接](https://pan.baidu.com/s/1NPYLJ04jE5i50LYLVvCRBQ)。
 
 ### Step 1. 处理数据
 京东官方比赛的数据没有公开，这里使用了18年公开的一份[淘宝客服对话数据](https://github.com/cooelf/DeepUtteranceAggregation)。在目录E-commerce下，运行process.sh。
