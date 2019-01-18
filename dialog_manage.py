@@ -42,7 +42,7 @@ class DialogStatus(object):
 
 class DialogManagement(object):
 
-    seq2seq_inst = get_infer_model(dialog_mode="multi_turn")
+    seq2seq_inst = get_infer_model(dialog_mode="single_turn")
     dialog_status = DialogStatus()
 
 

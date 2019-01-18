@@ -2,7 +2,7 @@
 
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 
 def file_path(dirname, file_name):
@@ -14,14 +14,16 @@ def file_path(dirname, file_name):
 vocab_path = file_path("data", "vocab.txt")
 single_train_path = file_path("data", "single_train.txt")
 multi_train_path = file_path("data", "multi_train.txt")
-version = "v5"
+version = "v0"
 model_path = file_path("model", version)
 
+"""
 # Evaluate
 single_questions_path = file_path("test_data", "single_questions.txt")
 single_answers_path = file_path("test_data", "single_answers.txt")
 multi_questions_path = file_path("test_data", "multi_questions.txt")
 multi_answers_path = file_path("test_data", "multi_answers.txt")
+"""
 
 word2vec_path = file_path("model", "word2vec.model")
 embeddings_path = file_path("model", "word.embeddings")
