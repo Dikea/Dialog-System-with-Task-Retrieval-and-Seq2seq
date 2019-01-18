@@ -62,9 +62,8 @@ class Seq2SeqModel():
             self.max_target_sequence_length, dtype=tf.float32, name="masks")
 
         with tf.variable_scope("encoder"):
-            emb_matrix = np.load(config.embeddings_path + ".npy")[:self.vocab_size]
-            embedding = tf.get_variable("embedding", shape=emb_matrix.shape,
-                initializer=tf.constant_initializer(emb_matrix), trainable=False)
+            embedding = tf.get_variable(name="embeddings", dtype=tf.float32,
+                initializer=tf.random_uniform([self.vocab_size, self.embedding_size], -0.1, 0.1))
             encoder_inputs_embedded = tf.nn.embedding_lookup(embedding, self.encoder_inputs)
             if not self.bidirectional_rnn:
                 encoder_cell = self._create_rnn_cell()

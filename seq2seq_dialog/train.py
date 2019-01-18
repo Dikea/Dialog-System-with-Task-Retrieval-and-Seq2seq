@@ -13,7 +13,6 @@ import tensorflow as tf
 from seq2seq_dialog.data_helpers import loadDataset, getBatches
 from seq2seq_dialog.data_helpers import sentence2enco
 from seq2seq_dialog.model import Seq2SeqModel
-from seq2seq_dialog.evaluate import evaluate
 from seq2seq_dialog import config
 
 
@@ -76,16 +75,7 @@ def train_model():
                 perplexity = math.exp(float(loss)) if loss < 300 else float('inf')
                 log_print("step=%d, loss=%.2f, perplexity=%.2f" % (current_step, loss, perplexity))
                 train_model.saver.save(train_model.sess, checkpoint_path)
-                """
-                bleu_score = evaluate(eval_model, FLAGS.dialog_mode) 
-                if bleu_score >= best_score:
-                    best_score = bleu_score
-                    train_model.saver.save(train_model.sess, checkpoint_path)
-                    log_print("BleuScore improved, score=%.4f, save model" % (bleu_score))
-                else:
-                    log_print("BleuScore reduced, score=%.4f" % (bleu_score))
-                """
-        time_e = time.time()
+            time_e = time.time()
         log_print ("Epoch %d training done, time=%.2f minutes" % (epoch + 1, (time_e - time_s) / 60))
 
 
