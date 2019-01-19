@@ -1,10 +1,10 @@
 # JDDC 大赛解决方案
 
-成绩：并列亚军，成绩排名第三。
+成绩：并列亚军，成绩排名第三，奖金10万元。
 
 ## 方案框架
 
-初赛使用检索匹配模型，决赛使用生成模型，人工评估使用综合对话框架。详情请参见[文档设计](https://github.com/Dikea/JDDC-Dialog-Solution/blob/master/DeepLearner-%E5%AF%B9%E8%AF%9D%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3.pdf)。
+初赛使用检索匹配模型，决赛使用生成模型，人工评估使用综合对话框架。详情请参见[设计文档](https://github.com/Dikea/JDDC-Dialog-Solution/blob/master/DeepLearner-%E5%AF%B9%E8%AF%9D%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3.pdf)。
 
 ![image](chatbot.jpg)
 
